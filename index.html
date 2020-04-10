@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Heatmap</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="main.css" />
+	<link href="/favicon.png" rel="icon" type="image/png" />
+	<meta name="mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+	<h1 id="info"></h1>
+
+
+	<div id="cameraNotSupported" class="notSupported">
+		<h1>Your browser does not support the Camera API.</h1>
+		<img src="images/screenshot.png" align="center" />
+	</div>
+
+	<div id="webGLNotSupported" class="notSupported">
+		<h1>Your browser does not support WebGL.</h1>
+		<img src="images/screenshot.png" align="center" />
+	</div>
+
+
+	<canvas id="heatmap"></canvas>
+<div class="bodytext"><div class="shake"><span id="spin"></span></div><br><span class="highlight">Against America’s Hustle Culture</span></div>
+
+
+	<button id="button"></button>
+
+	<script src="webgl-heatmap.js"></script>
+	<script src="camera.js"></script>
+	<script src="movement.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>

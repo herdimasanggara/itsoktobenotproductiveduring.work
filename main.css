@@ -1,0 +1,146 @@
+body {
+	background: black;
+	padding: 0;
+margin: 0;
+}
+
+h1 {
+	font-family: 'Helvetica neue', 'Helvetica', 'Arial', sans-serif;
+	font-size: 48px;
+	font-weight: 300;
+	color: #666;
+	text-align: center;
+}
+
+@font-face {
+font-family: "simsun";
+src:
+url("css/fonts/simsun2-webfont.woff") format("woff"),
+url("css/fonts/simsun2-webfont.woff2") format("woff2"),
+
+}
+
+
+.bodytext {
+	font-family: 'simsun', Times, Serif;
+	font-size: 52px;
+	-webkit-font-smoothing: none;
+	-webkit-text-stroke: 4px;
+padding: 80px 100px 80px 100px;
+vertical-align: middle;
+  text-align: center;
+}
+
+.highlight {
+	background-color: red;
+}
+
+
+#spin {
+  color:black;
+}
+#spin:after {
+  content:"";
+  animation: change 15s linear infinite;
+}
+@keyframes change {
+  0% { content:"One of the social implications that is utterly despicable from this pandemic is the notion of people who can work under a great amount of stress is something that should be applauded."; }
+  21% { content:"The idea that every nanosecond of our lives must be commodified and pointed toward profit and self-improvement."; }
+  36% { content:"We inhabit a culture that privileges novelty and growth over the cyclical and the regenerative."; }
+  49% { content:"Through a misplaced sense of righteousness, many have praised sacrificing the idleness of today for the productivity of tomorrow."; }
+  62% { content:"It is parasitic to afflict people with guilt for not producing enough in the middle of an outbreak afflicting the world."; }
+  75% { content: "It is cruel to demand more of people with increasingly less."; }
+  90% { content: "Burying yourself in mindless busywork is not the solution. So, go ahead, turn the video function off when your boss calls."; }
+}
+
+.shake {
+	animation: shake 0.5s infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.notSupported {
+	display: none;
+}
+
+.notSupported h1 {
+	color: #b41a1a;
+	margin-bottom: 20px;
+}
+
+.notSupported img {
+	display: block;
+	margin: 0 auto;
+}
+
+canvas {
+	position: fixed;
+	height: 100vh;
+  width: 100vw;
+  display: block;
+	z-index: -1;
+	padding: 0;
+margin: 0;
+}
+
+#fork,
+#idevelop {
+	display: block;
+	position: fixed;
+	z-index: 10;
+
+	top: 0;
+	right: 30px;
+	padding: 10px 50px 10px 10px;
+
+	background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+	border: 1px solid #0090ff;
+	border-top: 0;
+
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+#fork:hover,
+#idevelop:hover {
+	text-decoration: underline;
+}
+
+#idevelop {
+	opacity: 0.4;
+	border: 1px solid #eee;
+	border-top: 0;
+	color: #333;
+	right: 200px;
+	background: url('../images/idevelop.png') #fff no-repeat 95% 50%;
+}
+
+#idevelop:hover {
+	opacity: 1;
+}
+
+#button {
+	opacity: 0;
+	display: none;
+	margin: 20px auto;
+	padding: 10px 20px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+}
